@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "postinstall": "npm i webpack-dev-server -g && npm i webpack -g && npm i nodemon -g",
-    "dev": "nodemon index.js && webpack ./public",
+    "dev": "nodemon index.js && cd public && webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

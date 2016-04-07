@@ -8,12 +8,12 @@ var WebpackErrorNotificationPlugin = require('webpack-error-notification');
 module.exports = {
   // bundle個體&其來源
   entry: {
-    //'index': "./assets/js/index.jsx"
+    'index': "./assets/myjs/index.jsx"
   },
   //輸出位置
   output: {
-    path: path.resolve(__dirname, 'build', 'bundle'), //webpack 建置專案的路徑
-    publicPath: "http://localhost:3000/build/bundle", //webpack 使用 require() 時參考的路徑
+    path: path.resolve(__dirname, 'build'), //webpack 建置專案的路徑
+    publicPath: "http://localhost:3000/build", //webpack 使用 require() 時參考的路徑
     filename: "[name].js"
   },
 
@@ -21,9 +21,9 @@ module.exports = {
   resolve: {
     root: [
       path.join(__dirname, 'assets'),
-      path.join(__dirname, 'assets/scss'),
-      path.join(__dirname, 'assets/js'),
-      path.join(__dirname, 'assets/js/vendor'),
+      path.join(__dirname, 'assets/mysass'),
+      path.join(__dirname, 'assets/myjs'),
+      path.join(__dirname, 'assets/myjs/vendor'),
     ],
     extensions: ['', '.webpack.js', '.web.js', '.js', '.jsx', '.scss', '.css', 'config.js']
   },
