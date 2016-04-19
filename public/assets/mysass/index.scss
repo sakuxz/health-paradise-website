@@ -30,6 +30,11 @@ body {
   a.scrolly h3 {
     color: #E27689;
     border-bottom: none;
+    i.fa {
+      margin-right: 0.5em;
+      transform: translateY(-2px);
+      font-size: 0.8em;
+    }
   }
 }
 .health-info {
@@ -91,27 +96,28 @@ body {
     text-align: left;
     margin: 0 0 1.3em 2em;
     position: relative;
-    color: #DA5A70;
+    color: #758D92;
   }
   p:before {
-    content: "\f00c";
+    content: "\F00C";
     position: absolute;
     display: block;
     top: 6px;
     left: -2.16em;
     height: 25px;
     width: 25px;
-    background: #E27689;
+    background: #FFFFFF;
     font-family: FontAwesome;
     font-size: 1.2em;
     text-decoration: none;
     font-style: normal;
     font-weight: normal;
-    line-height: 0.7;
+    line-height: 0.6;
     padding-left: 3px;
     -webkit-font-smoothing: antialiased;
-    color: #7C2131;
+    color: #E8647B;
     border-radius: 21%;
+    border: 2px solid #423737;
   }
 }
 .activity-method:before {
@@ -121,18 +127,20 @@ body {
   background: #A2A3A3;
   display: block;
   position: absolute;
-  top: 0;
+  top: 7px;
   left: 0;
   z-index: 0;
 }
 .activity-award {
-  margin: 2em 13%;
+  max-width: 570px;
+  margin: 2em 13% 3em;
   background: #FFF7AF;
   text-align: left;
   padding: 1em;
   position: relative;
-  z-index: 100000;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.29);
+  z-index: 100;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.29) inset;
+  border-radius: 7px;
   article {
     margin: 0 0 0.5em;
     color: #475B52;
