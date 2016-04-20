@@ -1,4 +1,5 @@
 /node_modules
 /public/assets/myjs/*.js
 /public/build
+/public/images/health_intro
 *.log
