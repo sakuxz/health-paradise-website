@@ -20,13 +20,25 @@ body {
     position: relative;
     z-index: 10000;
   }
+  h2{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    margin-top: 42px;
+    span{
+      position: relative;
+      left: 11px;
+      transform: rotate(-1deg);
+      display: inline-block;
+      color: #A1FFFA;
+    }
+  }
   .ncue-logo{
-    width: 48px;
-    height: 48px;
+    width: 103px;
+    height: 103px;
     border-radius: 50%;
     position: absolute;
-    right: 1.8em;
-    bottom: 1em;
+    right: 2em;
+    bottom: 1.3em;
     z-index: 0;
   }
 }
@@ -66,6 +78,8 @@ body {
   }
 }
 .health-info {
+  max-width: 1000px;
+  margin: auto;
   padding: 1em 3em;
   > div {
     >div {
@@ -90,7 +104,7 @@ body {
         height: 100%;
         z-index: 1000;
         color: #0770C3;
-text-shadow: 0 1px 3px rgba(35, 120, 187, 0.44);
+        text-shadow: 0 1px 3px rgba(35, 120, 187, 0.44);
         a {
           border-bottom: none;
         }
