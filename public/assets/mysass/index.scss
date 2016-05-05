@@ -252,6 +252,35 @@ body {
 .icon-title.purple i{
   background: #E967FF;
 }
+a.lightcase-icon-close, a.lightcase-icon-next, a.lightcase-icon-prev{
+  border-bottom: none;
+}
+.schedule-img{
+  border-radius: 2%;
+  box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.16);
+  width: 47%;
+}
+.album{
+  margin-bottom: 2.6em !important;
+  text-align: left;
+  clear: left;
+  overflow: hidden;
+  background: rgba(224, 224, 224, 0.55);
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(189, 189, 189, 0.61) inset;
+  img{
+    float: left;
+    width: 23%;
+    margin: 1%;
+    border-radius: 2px;
+    box-shadow: 0 2px 3px -1px #7d7d7d;
+    transition: 0.3s box-shadow;
+  }
+  img:hover{
+    box-shadow: 0 2px 17px 2px rgba(156, 156, 156, 0.74);
+  }
+}
 @media screen and (max-width: 960px) {
   #top{
     background-position: 0 center !important;
@@ -263,6 +292,9 @@ body {
   }
   .container > p{
       padding: 3% 2em;
+  }
+  .schedule-img{
+    width: 80%;
   }
 }
 @media screen and (max-width: 515px) {
