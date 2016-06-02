@@ -263,8 +263,19 @@ a.lightcase-icon-close, a.lightcase-icon-next, a.lightcase-icon-prev{
 }
 .expend-btn{
   clear: left;
-  text-align: left;
-  padding: 2px 0.6em;
+  border-radius: 20px;
+  color: #FF637F;
+  margin: 0 auto 0.5em;
+  display: inline-block;
+  padding: 0 1em;
+  border: 1px solid #FF375A;
+  font-size: 0.8em;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.2s all;
   i{
     margin-right: 5px;
   }
@@ -272,30 +283,51 @@ a.lightcase-icon-close, a.lightcase-icon-next, a.lightcase-icon-prev{
     margin-left: 0.6em;
   }
 }
+.expend-btn:active {
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25) inset;
+}
+.expend-btn:hover{
+  color: white;
+  background: #FF637F;
+}
 .album{
-  transition: 0.3s all;
+  will-change: transform;
+  height: 0;
+  transition: 0.6s opacity;
   opacity: 0;
-  margin-bottom: 2.6em !important;
   text-align: left;
   clear: left;
   overflow: hidden;
   background: rgba(224, 224, 224, 0.55);
-  padding: 1em;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(189, 189, 189, 0.61) inset;
   img{
+    opacity: 0;
     float: left;
     width: 23%;
     margin: 1%;
     border-radius: 2px;
     box-shadow: 0 2px 3px -1px #7d7d7d;
-    transition: 0.3s box-shadow;
+    transition: 0.3s box-shadow,0.2s transform,0.6s opacity;
+    transition: 0.5s all;
+    transition-timing-function: cubic-bezier(0.68, 0.02, 0.56, 1.45);
+    transform: translateY(0.3em);
   }
   .clearfx{
     clear: left;
   }
   img:hover{
     box-shadow: 0 2px 17px 2px rgba(156, 156, 156, 0.74);
+  }
+}
+.album.vis{
+  padding: 1em;
+  margin-bottom: 2.6em !important;
+  opacity: 1;
+  height: inherit;
+  img{
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 @media screen and (max-width: 960px) {
