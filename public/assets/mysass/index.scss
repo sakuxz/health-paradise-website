@@ -220,6 +220,13 @@ body {
     border-left: 4px #E8647B solid;
     padding-left: 0.6em;
   }
+  .activity-time {
+    display: block;
+    font-size: 0.8em;
+    i {
+      margin-right: 10px;
+    }
+  }
 }
 .icon-title{
   i{
